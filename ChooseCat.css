@@ -1,0 +1,130 @@
+.chooseCat {
+  position: relative;
+  background: #F5F5F5;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+
+.chooseCat__closeButton {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #C7C7C7;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #F5F5F5;
+  background-image: url("/images/x.png");
+  background-size: 12px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.chooseCat__closeButton:hover {
+  background-color: #E5E5E5;
+}
+
+.chooseCat__chooseWay {
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.chooseCat__column {
+  float: left;
+  width: 25%;
+  padding: 5px 2px;
+}
+
+.chooseCat__column + .chooseCat__column {
+  border-left: 1px solid #8F8C8D;
+}
+
+.chooseCat__column--first {
+  background-color: #F5F5F5;
+}
+
+.chooseCat__list {
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.chooseCat__item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 3px 15px;
+  line-height: 1em;
+}
+
+.chooseCat__item--active, .chooseCat__item:hover {
+  position: relative;
+  background-color: #DEDEDC;
+}
+
+.chooseCat__item--active::after, .chooseCat__item:hover::after {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -14px;
+  margin-top: -14px;
+  border-left: 14px solid transparent;
+  border-top: 14px solid white;
+}
+
+.chooseCat__item--active::before, .chooseCat__item:hover::before {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -14px;
+  margin-bottom: -14px;
+  border-left: 14px solid transparent;
+  border-bottom: 14px solid white;
+}
+
+.chooseCat__item--firstColumn--active, .chooseCat__item--firstColumn:hover {
+  position: relative;
+  background-color: #DEDEDC;
+}
+
+.chooseCat__item--firstColumn--active::after, .chooseCat__item--firstColumn:hover::after {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -14px;
+  margin-top: -14px;
+  border-left: 14px solid transparent;
+  border-top: 14px solid #F5F5F5;
+}
+
+.chooseCat__item--firstColumn--active::before, .chooseCat__item--firstColumn:hover::before {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -14px;
+  margin-bottom: -14px;
+  border-left: 14px solid transparent;
+  border-bottom: 14px solid #F5F5F5;
+}
+
+/*# sourceMappingURL=sourcemaps/choosecat.css.map */
